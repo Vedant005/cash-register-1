@@ -6,19 +6,19 @@ const noOfNotes=document.querySelectorAll(".no-of-notes");
 
 const availableNotes= [2000,500,100,20,10,5,1];
 
-checkButton.addEventListener("click",function validateBillAndCashAmount(){
-    hideMessage();
-    if (billAmount.value>0) {
-        if(cashGiven.value >= billAmount.value){
-            const amountToBeReturned = cashGiven.value-billAmount.value
-            calculateChange(amountToBeReturned);
-        }else{
-            showMessage("uh oh!,your give proper cash amount,otherwise you will have to wash plates!")
+checkButton.addEventListener("click",() => {
+        hideMessage();
+        if (billAmount.value > 0) {
+            if (cashGiven.value >= billAmount.value) {
+                const amountToBeReturned = cashGiven.value - billAmount.value;
+                calculateChange(amountToBeReturned);
+            } else {
+                showMessage("uh oh!,your give proper cash amount,otherwise you will have to wash plates!");
+            }
+        } else {
+            showMessage("Invalid Bill Amount");
         }
-    }else{
-        showMessage("Invalid Bill Amount");
-    }
-})
+    })
 
 function calculateChange(amountToBeReturned){
     for (let i =0 ;i< availableNotes.length;i++){
