@@ -1,0 +1,20 @@
+*{
+    text-align: center;
+    background-color: aqua;
+
+}
+.container{
+    text-align: center;
+
+}
+.bill-amount{
+    margin: auto;
+    font-size: large;
+
+}
+.cash-given{
+    margin: auto;
+}
+button{
+    align-self: auto;
+}
