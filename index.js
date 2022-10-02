@@ -6,7 +6,7 @@ const noOfNotes=document.querySelectorAll(".no-of-notes");
 
 const availableNotes= [2000,500,100,20,10,5,1];
 
-checkButton.addEventListener('click',function validateBillAmount(){
+checkButton.addEventListener("click",function validateBillAndCashAmount(){
     hideMessage();
         if (billAmount.value > 0) {
             if (cashGiven.value >= billAmount.value) {
@@ -18,7 +18,7 @@ checkButton.addEventListener('click',function validateBillAmount(){
         } else {
             showMessage("Invalid Bill Amount");
         }
-    })
+    });
 
 function calculateChange(amountToBeReturned){
     for (let i =0 ;i< availableNotes.length;i++){
@@ -34,8 +34,8 @@ function hideMessage(){
     message.style.display="none";
 }
 
-function showMessage(Msg){
+function showMessage(msg){
     message.style.display="block";
-    message.innerText =Msg;
+    message.innerText =msg;
 
 }
