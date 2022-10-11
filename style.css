@@ -1,38 +1,69 @@
 *{
-    text-align: center;
-    background-color: aqua;
-
+    background-color: rgb(222, 240, 242);
+     text-align: center;
 }
-body{
-    display: inline;
-    margin-block-end: auto;
-    
 
+.heading{
+    padding: 2rem;
+  background-color: rgb(108, 233, 210);
+   color:brown;
+   border-end-end-radius: 2rem;
+    font-size:50px;
+     text-align: center;
 }
 nav{
     display: block;
-    background-color: blueviolet;
-}
-
-.container{
-    margin: 2rem auto 7rem;
-     width: 50vw;
-   display: flex;
-   flex-direction: column;
+    font-size: large;
     
-    border-radius: 5%;
-    padding: 1rem 2rem 5rem 2rem;
-
-
 }
-label{
+main{
+margin: 2rem auto 7rem;
+width: 50vw;
+display: flex;
+flex-direction: column;
+
+border-radius: 5%;
+padding: 1rem 2rem 5rem 2rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+label,input{
    width:2 rem;
-  
-   
+   height:5vh;
+   border-color: rgb(33, 225, 164);
  
 }
     
 
 .about{
     color:brown;
+}
+table, tr, th, td{
+    border: 2px solid;
+    background-color:rgb(149, 243, 173);
+    padding: 1rem;
+
+  }
+#check-button{
+    height: 5vh;
+    border-color: rgb(112, 224, 207);
+}
+
+
+  footer{
+    text-align: center;
+    padding: 0.5rem;
+     font-size:larger;
+   
+}
+
+.link{
+    text-decoration: none;
+    color:black;
+   background-color: aqua;
+    border-radius:1rem;
+    
 }
